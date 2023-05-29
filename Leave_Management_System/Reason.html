@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reason form</title>
+    <style>
+/* Styles for form container */
+.form-container {
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  
+}
+
+.form-container:hover {
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+}
+
+/* Styles for form labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Styles for form inputs */
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 20px; 
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  border-color: #FF4B2B;
+}
+
+   /* Styles for the button */
+/* Styles for the submit button */
+button[type="submit"] {
+  background-color: #FF4B2B;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for the submit button */
+button[type="submit"]:hover {
+  background-color: #FF4B2B;
+}
+
+/* Active state for the submit button */
+button[type="submit"]:active {
+  background-color:#FF4B2B;
+}
+
+/* Focus state for the submit button */
+button[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+/* Disabled state for the submit button */
+button[type="submit"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Decoration for the submit button */
+button[type="submit"]::after {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Decoration hover effect for the submit button */
+button[type="submit"]:hover::after {
+  color: #fff;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Decoration active state for the submit button */
+button[type="submit"]:active::after {
+  color: #fff;
+  transform: translateY(-50%) scale(1.2);
+}
+
+   
+    </style>
+
+  <body>
+    <div class="form-container">
+      <h2>Reason form</h2>
+      <form id="my-form" action="reasonphp.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+        <label for="reason">Reason for Leave:</label>
+        <textarea id="reason" name="reason" placeholder="Write your reason here.." style="height:200px" required></textarea>
+        <div class="karthika">
+        
+            
+            <button type="submit" name="submit">Submit</button>
+            <p id="message"></p>
+        </form>
+      </div>
+            
+  </body>
+</html>
