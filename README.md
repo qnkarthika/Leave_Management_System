@@ -12,8 +12,8 @@ Installation:
 Download the project's zip file.
 Extract the contents of the zip file.
 Move the project directory to the XAMPP htdocs folder:
-For Windows: C:\xampp\htdocs
-For Mac: /Applications/XAMPP/htdocs
+For Windows: C:\xampp\htdocs.
+For Mac: /Applications/XAMPP/htdocs.
 Ensure that all the extracted files are directly in the project directory without creating any subfolders.
 Start the XAMPP server:
 Launch the XAMPP control panel.
